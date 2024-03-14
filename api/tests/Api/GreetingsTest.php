@@ -8,22 +8,22 @@ class GreetingsTest extends ApiTestCase
 {
     // Exemple for test API
 
-//    public function testCreateGreeting(): void
-//    {
-//        static::createClient()->request('POST', '/greetings', [
-//            'json' => [
-//                'name' => 'Kévin',
-//            ],
-//            'headers' => [
-//                'Content-Type' => 'application/ld+json',
-//            ],
-//        ]);
-//
-//        $this->assertResponseStatusCodeSame(201);
-//        $this->assertJsonContains([
-//            '@context' => '/contexts/Greeting',
-//            '@type' => 'Greeting',
-//            'name' => 'Kévin',
-//        ]);
-//    }
+    public function testCreateGreeting(): void
+    {
+        static::createClient()->request('POST', '/greetings', [
+            'json' => [
+                'name' => 'Kévin',
+            ],
+            'headers' => [
+                'Content-Type' => 'application/ld+json',
+            ],
+        ]);
+
+        $this->assertResponseStatusCodeSame(201);
+        $this->assertJsonContains([
+            '@context' => '/contexts/Greeting',
+            '@type' => 'Greeting',
+            'name' => 'Kévin',
+        ]);
+    }
 }
