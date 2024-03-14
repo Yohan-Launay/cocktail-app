@@ -9,6 +9,7 @@ const Welcome = () => (
     <Head>
       <title>Cocktail app</title>
     </Head>
+    <h1>Hello world !</h1>
   </div>
 );
 export default Welcome;
