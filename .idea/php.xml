@@ -120,6 +120,7 @@
       <path value="$PROJECT_DIR$/api/vendor/zenstruck/foundry" />
       <path value="$PROJECT_DIR$/api/vendor/zenstruck/assert" />
       <path value="$PROJECT_DIR$/api/vendor/zenstruck/callback" />
+      <path value="$PROJECT_DIR$/api/vendor/bin/.phpunit" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
